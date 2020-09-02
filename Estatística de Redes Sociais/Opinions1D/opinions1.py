@@ -23,15 +23,14 @@ opinions_matrix.append(opinions)
 
 for i in range(0,T):
     new_opinions = copy.deepcopy(opinions_matrix[i])
-    samples = random.sample(list(G.nodes()),N)
-    for sample in samples:
-        influencers = [(sample-1)%N, (sample+1)%N]
+    for node in list(G.nodes()):
+        influencers = [(node-1)%N, (node+1)%N]
         influencing_opinions = [opinions_matrix[i][infl] for infl in influencers]
         probplus = influencing_opinions.count(1)
         probminus = influencing_opinions.count(-1)
         probs = [probplus, probminus]
         probs = [probplus/len(probs), probminus/len(probs)] ## Normalizing probabilities
-        new_opinions[sample] = random.choices(O, k=1, weights=probs)[0]
+        new_opinions[node] = random.choices(O, k=1, weights=probs)[0]
     opinions_matrix.append(new_opinions)
     
 def update(iteration):
