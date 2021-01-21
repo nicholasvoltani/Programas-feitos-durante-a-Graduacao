@@ -1,6 +1,6 @@
 # Modelo do Votante em 2D
 
-Analogamente ao modelo do votante em 1D, podemos criar um modelo do votante em 2D também, com a ressalva de que os vizinhos de um agente serão aqueles à sua esquerda/direita, em cima e embaixo.
+Analogamente ao modelo do votante em 1D, podemos criar um modelo do votante em 2D também, com a ressalva de que os vizinhos de um agente serão aqueles à sua esquerda/direita, em cima e embaixo. Como no modelo 1D, todos os lados estão conectados com os seus lados opostos (i.e. estão em um toro).
 
 <p align = "center">
 	<img src = "https://media3.giphy.com/media/q62qfdNck6J28zJb9f/giphy.gif">
