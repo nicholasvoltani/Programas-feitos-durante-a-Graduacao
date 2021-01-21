@@ -1,0 +1,37 @@
+import sys
+from matplotlib.animation import FuncAnimation,PillowWriter
+import networkx as nx
+import matplotlib.pyplot as plt
+import random
+import numpy as np
+import gif
+from math import comb
+from erdosrenyi import ErdosRenyiAdj, GenerateErdosRenyi
+
+## Initially, N = 2
+N = 2
+p = 0.8
+M = ErdosRenyiAdj(N,p) ## Reminder that M is upper-triangular
+G = GenerateErdosRenyi(N,p,M)
+print(M, "Adjacency for N=2")
+
+maxlikelihoods = [M.sum()/(comb(N,2))] ## Max Lklhd for N=2
+
+## Iterate T times
+T = 100
+for t in range(1,T):
+    ## Create to-be-adjacency matrix
+    M_t = np.zeros((N+t,N+t))
+    print(M_t, "Zeros matrix")
+    ## Left upper portion is previous adj matrix
+    M_t[0:t,0:t] = M
+    print(M_t, "Fit previous matrix inside")
+    M_t[0:t,t] = random.choices([0,1],k=t,weights=[(1-p),p])
+
+    ## We call it the new adjacency matrix, of size N + t
+    M = M_t
+    print(N+t, type(N+t))
+    maxlikelihoods.append(M.sum()/(comb(N+t,2)))
+
+plt.plot(list(range(N,T)), maxlikelihoods)
+plt.show()

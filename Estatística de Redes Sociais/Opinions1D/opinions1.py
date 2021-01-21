@@ -5,8 +5,9 @@ from matplotlib.animation import FuncAnimation,PillowWriter
 import random
 import networkx as nx
 import copy
+random.seed(55583)
 
-T = 200 ## Max iterations
+T = 50 ## Max iterations
 N = 10  ## Number of nodes
 O = [1,-1] ## Possible opinions
 
@@ -47,7 +48,7 @@ def update(iteration):
 if __name__ == "__main__":
     anim = FuncAnimation(fig, update, frames = range(T), interval = 100)
     if len(sys.argv) > 1:
-        writer = PillowWriter(fps=20)
+        writer = PillowWriter(fps=10)
         anim.save(sys.argv[1], writer = writer)
         plt.show()
     else:
