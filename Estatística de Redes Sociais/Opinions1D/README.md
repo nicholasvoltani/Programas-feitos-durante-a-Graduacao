@@ -14,5 +14,5 @@ Inicialmente, eu pensei que, a cada iteração, TODOS os agentes eram convocados
 Esperaria-se que a tendência fosse ao consenso como acima, mas há uma alternativa: uma órbita de período 2, em que todos os agentes "flipam" suas opiniões a cada iteração. Mesmo não tendo tanta relevância como um modelo, é um fenômeno interessante.
 
 <p align="center">
-  ![](https://media2.giphy.com/media/cNeXir6JZALffvcvLD/giphy.gif)
+<img src = "https://media2.giphy.com/media/cNeXir6JZALffvcvLD/giphy.gif">
 </p>
