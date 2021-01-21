@@ -9,5 +9,5 @@ Analogamente ao modelo do votante em 1D, podemos criar um modelo do votante em 2
 Uma visualização mais "fiel" seria com os agentes dispostos em um toro, mas (infelizmente) não é muito bom visualizar objetos 3D em uma tela de computador...
 
 <p align = "center">
-	<img src = "/opinions2d.gif">
+	<img src = "opinions2d.gif">
 </p>
