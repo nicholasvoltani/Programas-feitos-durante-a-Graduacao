@@ -7,7 +7,6 @@ Suponha uma população de agentes {1, ..., N} disposta como nos gifs abaixo.
 Pode-se ver abaixo que a tendência é de uma polarização/consenso das opiniões.
 
 ![](https://media4.giphy.com/media/QYkQ00pFTlWKq52qyh/giphy.gif)
-
 ![](https://media1.giphy.com/media/cNeAntF728Caa3t1EF/giphy.gif)
 
 Inicialmente, eu pensei que, a cada iteração, TODOS os agentes eram convocados a reconsiderar suas respectivas opiniões, baseado em seus vizinhos. 
