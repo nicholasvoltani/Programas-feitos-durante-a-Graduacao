@@ -17,3 +17,8 @@ Esperaria-se que a tendência fosse ao consenso como acima, mas há uma alternat
 <p align="center">
   <img src = "https://media2.giphy.com/media/cNeXir6JZALffvcvLD/giphy.gif">
 </p>
+
+Podemos considerar a presença de um "robô", i.e. um agente cuja opinião é constante, independente de seus vizinhos; isso conduz invariavelmente ao consenso da opinião do "robô".
+<p align="center">
+  <img src = "https://media3.giphy.com/media/PkcNBLrE1n08sNeq40/giphy.gif">
+</p>
