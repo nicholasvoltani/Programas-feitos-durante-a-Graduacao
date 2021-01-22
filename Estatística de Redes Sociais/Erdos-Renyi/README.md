@@ -18,7 +18,7 @@ Ou seja, as matrizes estão encaixadas como na figura abaixo, para cada *N*:
 	<img src = "nestedmatrices.svg">
 </p>
 
-Desejamos avaliar como a máxima verossimilhança evolui conforme <img src="https://latex.codecogs.com/png.latex?\inline&space;\bg_white&space; N&space;\to&space;\infty"/>
+Desejamos avaliar como a máxima verossimilhança evolui conforme
 
 <p align = "center">
 	<img src="https://latex.codecogs.com/png.latex?\inline&space;\bg_white&space;\lim\limits_{N&space;\to&space;\infty}&space;\hat{p}_{p,N}" title="\lim\limits_{N \to \infty} \hat{p}_{p,N}" />
