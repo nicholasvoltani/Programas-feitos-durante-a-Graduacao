@@ -7,15 +7,17 @@ import sys
 from matplotlib.cm import ScalarMappable
 plt.style.use('ggplot')
 
+if len(sys.argv) != 2:
+    raise Exception("Usage: $python3 ba_bar.py <gifname.gif>")
+
 fig = plt.figure()
 
-T = 500 ## Time of iteration
+T = 100 ## Time of iteration
 
 G = nx.Graph()
 G.add_nodes_from(range(2))
-## Randomly starts with an edge between first nodes
-if random.randint(0,1):
-    G.add_edge(0,1)
+## Starts with an edge between first nodes
+G.add_edge(0,1)
 
 @gif.frame
 def plot_bar(it,G):

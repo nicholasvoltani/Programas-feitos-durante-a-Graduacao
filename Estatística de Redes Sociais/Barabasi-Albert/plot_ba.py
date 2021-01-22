@@ -9,14 +9,14 @@ fig = plt.figure()
 
 T = 50 ## Time of iteration
 
+if len(sys.argv) != 2:
+    raise Exception("Usage: $python3 plot_ba.py <gifname.gif>")
+
+## Initializing graph 
 G = nx.Graph()
 G.add_nodes_from(range(2))
-## Randomly starts with an edge between first nodes
-if random.randint(0,1):
-    G.add_edge(0,1)
-
-#if random.randint(0,1):
-#    G.add_edge(1,0)
+## Starts with an edge between both nodes
+G.add_edge(0,1)
 
 @gif.frame
 def plot_node(it,G):
