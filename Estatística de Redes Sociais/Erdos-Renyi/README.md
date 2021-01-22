@@ -7,4 +7,4 @@ Dada uma população de *N* agentes e uma probabilidade *0 < p < 1*, então para
 </p>
 
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
+<img src="https://latex.codecogs.com/svg.latex?\inline&space;\bg_blue&space;\huge&space;jdjdjd" title="\huge jdjdjd" />
