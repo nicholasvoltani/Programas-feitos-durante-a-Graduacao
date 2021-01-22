@@ -47,10 +47,18 @@ def r(a,U, beta = 1):
 
 
 def O_Plus(U,A, beta = 1):
+	'''
+	Probability that O(U[A]) == 1.
+	'''
+
 	denom = 1 + np.exp(-2*beta*U[A])
 	return 1/denom
 
 def ChooseO(U,A,beta=1):
+	'''
+	Self-explanatory name, I suppose...
+	'''
+
 	p = O_Plus(U,A,beta=beta)
 	xi = random.uniform(0,1)
 	if xi < p:
@@ -60,7 +68,7 @@ def ChooseO(U,A,beta=1):
 
 def A1O1(U, beta = 1,xi_1 = random.uniform(0,1), xi_2 = random.uniform(0,1)):
 	'''
-	Yields an agent A and their opinion O, prioritizing agents "a" with the highest |U["a"]| values.
+	Yields an agent A and their opinion O, prioritizing agents "a" with the highest | U["a"] | values.
 	'''
 	
 	## Sorting U by decreasing abs value
@@ -91,6 +99,7 @@ def A2O2(U, permuts, beta = 1, xi_1 = random.uniform(0,1), xi_2 = random.uniform
 	Yields an agent A and their opinion O, via given permutation "permuts".
 	Also returns "permuts" with each index shifted to the left (first becomes last).
 	'''
+
 	## Sorting U by permuts's order
 	## First element to be analyzed will be permuts[0]
 	## and we have permuts[k] = (permuts[0] - k)%len(U)

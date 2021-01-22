@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random
 
-## Mudar valores aqui!
+## Change values here!
 beta = 0
 N = 10
 T = 100000
@@ -14,7 +14,7 @@ U = InitializeGalvesLocherbach(N)
 totalsum = [U[0]] ## /1
 
 for k in range(1,T):
-	## Pressões |maiores| falam primeiro
+	## |Larger| pressures speak first 
 	U = Iterate(N,U,beta)
 	totalsum.append(((k)*totalsum[-1]+U[0])/(k+1))
 
