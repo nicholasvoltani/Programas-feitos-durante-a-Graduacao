@@ -13,7 +13,7 @@ Tenha-se uma sequência de grafos de Erdős-Rényi <img src="https://latex.codec
 <p align = "center"> 
 	<img src="https://latex.codecogs.com/png.latex?\inline&space;\bg_white&space;M_{N&plus;1}&space;(v,&space;v')&space;=&space;M_{N}(v,v')&space;\,\,&space;\forall&space;v,v'&space;\in&space;\{1,&space;\dots,&space;N\}" title="M_{N+1} (v, v') = M_{N}(v,v') \,\, \forall v,v' \in \{1, \dots, N\}" />
 </p>
-Ou seja, as matrizes estão encaixadas como na figura abaixo, para cada *N*:
+Ou seja, as matrizes estão encaixadas como na figura abaixo, para cada _N_,
 <p align = "center">
 	<img src = "nestedmatrices.svg">
 </p>
