@@ -19,3 +19,8 @@ print(cc)
 nx.draw(G)
 plt.title(f"Average Clustering {cc}")
 plt.show()
+
+1 == 1
+
+0 <= 1 <= 2
+
